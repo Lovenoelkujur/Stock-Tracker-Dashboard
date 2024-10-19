@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Tracker Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Tracker Dashboard</h1>
+        
+        <!-- Stock Search Form -->
+        <form id="stock-form">
+            <input type="text" id="stock-symbol" placeholder="Enter Stock Symbol (e.g., AAPL)" required>
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Trending Stocks Dropdown -->
+         <!-- <h2>Top 10 Trending Stocks</h2> -->
+        <select id="trending-stocks">
+            <option value=""><h3>Select Trending Stock</h3></option>
+            <!-- Options will be dynamically populated here -->
+        </select>
+
+        <!-- Stock Information Table -->
+         <h2>Compare Stocks</h2>
+        <table id="stock-table">
+            <thead>
+                <tr>
+                    <th>Stock Symbol</th>
+                    <th>Price</th>
+                    <th>Volume</th>
+                    <th>Change</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Stock Data Rows Will Be Dynamically Inserted Here -->
+            </tbody>
+        </table>
+
+        <!-- Stock Price Trend Graph -->
+         <h2>Stock Price Graph</h2>
+        <canvas id="stock-chart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
